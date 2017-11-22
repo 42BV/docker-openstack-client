@@ -2,7 +2,7 @@
 
 
 # Docker - OpenStack Client
-[![Openstack Client](./logo.png)](https://github.com/openstack/python-openstackclient)
+[![Openstack Client](https://raw.githubusercontent.com/42BV/docker-openstack-client/master/logo.png)](https://github.com/openstack/python-openstackclient)
 
 Run the OpenStack client (python-openstackclient) in a docker container.
 
