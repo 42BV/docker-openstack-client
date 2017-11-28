@@ -1,13 +1,14 @@
 [![Docker Build Statu](https://img.shields.io/docker/build/42bv/openstack-client.svg)](https://hub.docker.com/r/42bv/openstack-client/builds/) ![Docker Stars](https://img.shields.io/docker/stars/42bv/openstack-client.svg) [![Docker Pulls](https://img.shields.io/docker/pulls/42bv/openstack-client.svg)](https://hub.docker.com/r/42bv/openstack-client/)
 
-## Supported tags and Dockerfile links
-
-- latest ([Dockerfile](https://github.com/42BV/docker-openstack-client/blob/master/Dockerfile))
-
 # Docker - OpenStack Client
 [![Openstack Client](https://raw.githubusercontent.com/42BV/docker-openstack-client/master/logo.png)](https://www.openstack.org)
 
 Run the OpenStack clients in a Docker container.
+
+
+## Supported tags and Dockerfile links
+
+- latest ([Dockerfile](https://github.com/42BV/docker-openstack-client/blob/master/Dockerfile))
 
 ## Projects included
 
@@ -79,8 +80,8 @@ configuration show
 ### Heat Orchestration Templates
 
 Using templates to launch a stack:
-- Run openstack-client in "Detached Mode"
-- When referencing Heat Orchestration Templates (HOT), note that the workdir inside the container is also `/etc/openstack`.
+- Run openstack-client in "Detached Mode" as described above.
+- When referencing Heat Orchestration Templates, note that the workdir inside the container is `/etc/openstack`.
 
 ```
 docker exec openstack-client openstack stack create -t /etc/openstack/<template.yaml> <stack_name>
