@@ -1,14 +1,8 @@
 [![Docker Build Statu](https://img.shields.io/docker/build/42bv/openstack-client.svg)](https://hub.docker.com/r/42bv/openstack-client/builds/) ![Docker Stars](https://img.shields.io/docker/stars/42bv/openstack-client.svg) [![Docker Pulls](https://img.shields.io/docker/pulls/42bv/openstack-client.svg)](https://hub.docker.com/r/42bv/openstack-client/)
 
-# Docker - OpenStack Client
-[![Openstack Client](https://raw.githubusercontent.com/42BV/docker-openstack-client/master/logo.png)](https://www.openstack.org)
+# [![Docker - OpenStack Client](https://raw.githubusercontent.com/42BV/docker-openstack-client/master/logo.png)](https://www.openstack.org)
 
 Run the OpenStack clients in a Docker container.
-
-
-## Supported tags and Dockerfile links
-
-- latest ([Dockerfile](https://github.com/42BV/docker-openstack-client/blob/master/Dockerfile))
 
 ## Projects included
 
@@ -20,8 +14,13 @@ Run the OpenStack clients in a Docker container.
 
 ---
 
+## Requirements
+
+- [Docker](https://www.docker.com/community-edition)
+
 ## Build 
 
+Modify and build the container image from source:
 ```
 git clone https://github.com/42BV/docker-openstack-client.git
 cd docker-openstack-client
@@ -32,6 +31,11 @@ docker build -t openstack-client:<tag> .
 
 ## Pull
 
+### Supported tags and Dockerfile links
+
+- latest ([Dockerfile](https://github.com/42BV/docker-openstack-client/blob/master/Dockerfile))
+
+Download a ready for use container image:
 ```
 docker pull 42bv/openstack-client:latest
 ```
@@ -77,7 +81,10 @@ configuration show
 
 ---
 
-### Heat Orchestration Templates
+## Heat Orchestration Templates
+![Heat Orchestration](https://raw.githubusercontent.com/42BV/docker-openstack-client/master/heat.png)
+
+Template Guide: https://docs.openstack.org/heat/latest/template_guide/index.html
 
 Using templates to launch a stack:
 - Run openstack-client in "Detached Mode" as described above.
